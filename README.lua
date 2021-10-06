@@ -2959,13 +2959,13 @@ local win = Flux:Window("SWORD HUB", "[ðŸŒŠ SEA 3] Blox Fruits", _G.Color1, 
 local AutoFarm = win:Tab("Main", "http://www.roblox.com/asset/?id=7040391851")
 
 
-AutoFarm:Toggle("Auto Haki", "", _G.AD, function(vu)
+AutoFarm:Toggle("Auto Haki", "",true, function(vu)
 
     game:GetService("VirtualInputManager"):SendKeyEvent(true,101,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
 end)
 
 
-AutoFarm:Toggle("Auto Haki", "", _G.A, function(vu)
+AutoFarm:Toggle("Auto Haki", "",true, function(vu)
     _G.LegebdarySwordHop = vu    
 end)
 spawn(function()
@@ -2975,7 +2975,7 @@ spawn(function()
 				if v.Name == "Marine Captain [Lv. 900]" then
 					
 		  
-			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,5,2.5)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,5,2)
 		  
 				end
 		  end
